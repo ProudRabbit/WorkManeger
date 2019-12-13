@@ -12,7 +12,7 @@ void Employee::showInfo()
 {
 	cout << "职工编号： " << m_ID
 		<< " \t职工姓名： " << m_name
-		<< " \t岗位：" << m_DeptID
+		<< " \t岗位：" << this->getDeptname()
 		<< " \t岗位职责：完成经理交给的任务" << endl;
 }
 
@@ -34,7 +34,7 @@ void Manager::showInfo()
 {
 	cout << "职工编号： " << m_ID
 		<< " \t职工姓名： " << m_name
-		<< " \t岗位：" << m_DeptID
+		<< " \t岗位：" << this->getDeptname()
 		<< " \t岗位职责：完成老板交给的任务，并下发任务给员工" << endl;
 }
 
@@ -56,7 +56,7 @@ void Boss::showInfo()
 {
 	cout << "职工编号： " << m_ID
 		<< " \t职工姓名： " << m_name
-		<< " \t岗位：" << m_DeptID
+		<< " \t岗位：" << this->getDeptname()
 		<< " \t岗位职责：管理公司所有事物" << endl;
 }
 
